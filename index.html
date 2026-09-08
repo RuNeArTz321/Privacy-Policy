@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coding Ibex — Game Studio</title>
+<meta name="description" content="Coding Ibex is an independent mobile game studio, and the maker of STAX.">
+<meta name="theme-color" content="#12021a">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <div class="logo">CI</div>
+    <div class="brand">Coding&nbsp;<span>Ibex</span><small>Game Studio</small></div>
+    <nav class="site">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== hero banner ===== -->
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Indie Game Studio</span>
+      <h1>We make small games<br>with <span class="accent">big feel</span>.</h1>
+      <p class="lede">
+        Tight, tactile arcade games — easy to pick up, hard to put down.
+        No accounts, no clutter, just the good part.
+      </p>
+      <a class="btn" href="#games">See our games</a>
+      <a class="btn alt" href="privacy-policy.html">Privacy Policy</a>
+    </div>
+
+    <!-- stacked blocks, in the game's own skin colours -->
+    <div class="hero-art">
+      <svg class="float" viewBox="0 0 210 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A tower of stacked blocks">
+        <g stroke="#12021a" stroke-width="4" stroke-linejoin="round">
+          <!-- bottom -> top; each block = front face + lighter top face -->
+          <g>
+            <polygon points="24,208 150,208 186,186 60,186" fill="#f0d4a4"/>
+            <rect x="24" y="208" width="126" height="26" fill="#e0b87a"/>
+          </g>
+          <g>
+            <polygon points="34,178 160,178 196,156 70,156" fill="#ffe9a8"/>
+            <rect x="34" y="178" width="126" height="26" fill="#ffd76a"/>
+          </g>
+          <g>
+            <polygon points="20,148 146,148 182,126 56,126" fill="#8dfadf"/>
+            <rect x="20" y="148" width="126" height="26" fill="#39f2c4"/>
+          </g>
+          <g>
+            <polygon points="38,118 164,118 200,96 74,96" fill="#ff9ac8"/>
+            <rect x="38" y="118" width="126" height="26" fill="#ff5aa5"/>
+          </g>
+          <g>
+            <polygon points="26,88 152,88 188,66 62,66" fill="#e0ff8f"/>
+            <rect x="26" y="88" width="126" height="26" fill="#c6ff2e"/>
+          </g>
+        </g>
+        <!-- sparkles -->
+        <g fill="#ffffff" opacity=".85">
+          <path d="M180 44 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z"/>
+          <path d="M40 40 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z" opacity=".6"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <div class="ribbon">
+    <span>🎮 Made for mobile</span>
+    <span>⚡ Free to play</span>
+    <span>🔒 Privacy first</span>
+  </div>
+
+  <h2 id="games">Our games</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="icon-row">
+        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+          <g stroke="#12021a" stroke-width="2.5" stroke-linejoin="round">
+            <rect x="5" y="20" width="20" height="7" rx="1.5" fill="#39f2c4"/>
+            <rect x="8" y="12" width="20" height="7" rx="1.5" fill="#ff5aa5"/>
+            <rect x="5" y="4"  width="20" height="7" rx="1.5" fill="#c6ff2e"/>
+          </g>
+        </svg>
+        <h3 style="margin:0">STAX</h3>
+      </div>
+      <p style="margin-bottom:6px">
+        <strong>Stack. Perfect. Repeat.</strong> Time your taps to build the tower as high as you can,
+        chain perfect drops for blazing combo streaks, and climb the global leaderboard.
+      </p>
+      <p style="color:var(--text-dim); font-size:.88rem; margin:0">Android · Free to play</p>
+    </div>
+
+    <div class="card">
+      <div class="icon-row">
+        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+          <path d="M17 3 L29 8 v9c0 7-5 12-12 14C10 29 5 24 5 17V8z"
+                fill="#c6ff2e" stroke="#12021a" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M11.5 17.5 l4 4 7.5-8.5" fill="none" stroke="#12021a"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3 style="margin:0">Privacy first</h3>
+      </div>
+      <p style="margin-bottom:6px">
+        No sign-up, no accounts, and your progress stays on your device. Read exactly what our
+        games collect, why, and how to opt out.
+      </p>
+      <a class="btn" href="privacy-policy.html">Read the Privacy Policy</a>
+    </div>
+  </div>
+
+  <h2 id="contact">Contact</h2>
+  <p>Questions, bug reports, press enquiries or privacy requests — we read everything.</p>
+  <div class="card">
+    <p style="margin:0">
+      ✉️ Email: <a href="mailto:Usman@codingibex.com">Usman@codingibex.com</a>
+    </p>
+  </div>
+
+  <footer class="site">
+    <span>&copy; <span id="yr">2026</span> Coding Ibex. All rights reserved.</span>
+    <span><a href="index.html">Home</a> · <a href="privacy-policy.html">Privacy Policy</a></span>
+  </footer>
+
+</div>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
