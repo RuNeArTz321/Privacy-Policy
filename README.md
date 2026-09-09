@@ -19,8 +19,8 @@ Served with GitHub Pages from the `main` branch, root folder.
 
 Live URLs:
 
-- Home: `https://runeartz321.github.io/coding-ibex-site/`
-- Privacy policy: `https://runeartz321.github.io/coding-ibex-site/privacy-policy.html`
+- Home: `https://runeartz321.github.io/Privacy-Policy/`
+- Privacy policy: `https://runeartz321.github.io/Privacy-Policy/privacy-policy.html`
 
 The privacy policy URL is the one submitted to the Google Play Console
 (App content → Privacy policy).
