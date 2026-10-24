@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>app-ads.txt — Coding Ibex</title>
+<meta name="description" content="The app-ads.txt authorized sellers file for Coding Ibex and its mobile games, including STAX.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <div class="logo">CI</div>
+    <div class="brand">Coding&nbsp;<span>Ibex</span><small>Game Studio</small></div>
+    <nav class="site">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="app-ads.html">app-ads.txt</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== hero banner ===== -->
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">Advertising</span>
+      <h1>app-ads<span class="accent">.txt</span></h1>
+      <p class="lede">
+        Our authorized sellers file. Ad networks read it to confirm that ads shown in our games are
+        sold by us, which protects players and advertisers from ad fraud.
+      </p>
+    </div>
+
+    <div class="hero-art">
+      <svg class="float" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A text document">
+        <path d="M44 14h82l40 40v146a8 8 0 0 1-8 8H44a8 8 0 0 1-8-8V22a8 8 0 0 1 8-8z"
+              fill="#c6ff2e" stroke="#12021a" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M126 14v32a8 8 0 0 0 8 8h32" fill="#a5e024" stroke="#12021a" stroke-width="6" stroke-linejoin="round"/>
+        <g stroke="#12021a" stroke-width="8" stroke-linecap="round">
+          <line x1="62" y1="92"  x2="140" y2="92"/>
+          <line x1="62" y1="120" x2="128" y2="120"/>
+          <line x1="62" y1="148" x2="140" y2="148"/>
+          <line x1="62" y1="176" x2="110" y2="176"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <div class="card">
+    <h2>Current contents</h2>
+    <!-- Shows the live file (fetched below), so this page can never disagree with what ad
+         networks read. The text here is only the fallback if the fetch is blocked. -->
+    <pre class="adstxt" id="adsTxt">google.com, pub-9852629951035015, DIRECT, f08c47fec0942fa0</pre>
+    <p style="margin:14px 0 0">
+      <a class="btn" href="app-ads.txt">View the raw file</a>
+    </p>
+  </div>
+
+  <h2>What each part means</h2>
+  <ul>
+    <li><strong>google.com</strong> — the ad system allowed to sell ads in our apps (Google AdMob).</li>
+    <li><strong>pub-9852629951035015</strong> — our AdMob publisher account.</li>
+    <li><strong>DIRECT</strong> — we sell through that account ourselves, not through a reseller.</li>
+    <li><strong>f08c47fec0942fa0</strong> — Google&rsquo;s identifier in the IAB Tech Lab registry.</li>
+  </ul>
+
+  <div class="note">
+    This file follows the <a href="https://iabtechlab.com/ads-txt/">IAB Tech Lab app-ads.txt</a>
+    specification and covers our games, including <strong>STAX</strong> (<code>com.codeibex.stax</code>).
+  </div>
+
+  <footer class="site">
+    <span>&copy; <span id="yr">2026</span> Coding Ibex. All rights reserved.</span>
+    <span><a href="index.html">Home</a> &middot; <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="app-ads.html">app-ads.txt</a></span>
+  </footer>
+
+</div>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  fetch('app-ads.txt', { cache: 'no-store' })
+    .then(function (r) { return r.ok ? r.text() : null; })
+    .then(function (t) { if (t && t.trim()) document.getElementById('adsTxt').textContent = t.trim(); })
+    .catch(function () { /* keep the fallback text */ });
+</script>
+</body>
+</html>
