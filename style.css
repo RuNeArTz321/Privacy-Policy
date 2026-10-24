@@ -209,19 +209,6 @@ li { margin: 7px 0; }
   background: rgba(255, 90, 165, 0.12);
   border-radius: 10px; padding: 14px 18px; margin: 22px 0; font-size: .95rem;
 }
-/* app-ads.txt contents, shown verbatim */
-.adstxt {
-  margin: 10px 0 0;
-  padding: 14px 16px;
-  background: rgba(0, 0, 0, .38);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  color: var(--lime);
-  font: 600 .95rem/1.5 ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
-  white-space: pre-wrap;
-  word-break: break-all;
-}
-
 .todo {
   border-left: 5px solid var(--gold);
   background: rgba(255, 215, 106, 0.14);
